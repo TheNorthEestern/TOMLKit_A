@@ -8,7 +8,7 @@ let package = Package(
 		.macOS(.v10_15),
 		.iOS(.v13),
 		.watchOS(.v6),
-		.tvOS(.v12),
+		.tvOS(.v18),
 	],
 	products: [
 		.library(name: "TOMLKit", targets: ["TOMLKit"]),
