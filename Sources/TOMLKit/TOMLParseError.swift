@@ -7,7 +7,7 @@
 import CTOML
 
 /// The position in the TOML document at which a parsing error occurred.
-public struct TOMLSourcePosition: Equatable, CustomDebugStringConvertible {
+public struct TOMLSourcePosition: Equatable, CustomDebugStringConvertible, Sendable {
 	/// The line at which a parsing error occurred.
 	public let line: Int
 
@@ -27,7 +27,7 @@ public struct TOMLSourcePosition: Equatable, CustomDebugStringConvertible {
 	}
 }
 
-public struct TOMLSourceRegion: Equatable, CustomDebugStringConvertible {
+public struct TOMLSourceRegion: Equatable, CustomDebugStringConvertible, Sendable {
 	public let begin: TOMLSourcePosition
 	public let end: TOMLSourcePosition
 

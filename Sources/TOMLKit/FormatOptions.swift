@@ -17,7 +17,7 @@ public enum ConversionFormat {
 }
 
 /// Formatting options that are used when converting a ``TOMLTable`` to a JSON, YAML, or TOML document.
-public struct FormatOptions: OptionSet {
+public struct FormatOptions: OptionSet, Sendable {
 	public let rawValue: UInt64
 
 	public init(rawValue: UInt64) {
